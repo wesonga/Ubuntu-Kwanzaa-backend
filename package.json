@@ -1,0 +1,27 @@
+{
+  "name": "golden-time-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "forever": "^4.0.3",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "description": "<h1 align=\"center\">Golden Time - Backend 🛸</h1> <h3 align=\"center\">For 2023 Google Developers Solution Challenge</h3> <p align=\"center\">   <img src=\"https://user-images.githubusercontent.com/11978494/228843932-c59e03fb-d4e7-458d-a548-58e80583a7ea.png\" alt=\"icon\" width=\"250\" height=\"250\"> </p>",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
+}
