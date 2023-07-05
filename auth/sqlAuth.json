@@ -1,6 +1,6 @@
 {
   "host": "localhost",
   "user": "root",
-  "password": "Password",
+  "password": "",
   "database": "gdsc-ys-golden-time"
 }
