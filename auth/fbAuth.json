@@ -1,8 +1,8 @@
 {
   "type": "service_account",
   "project_id": "ubuntu-kwanzaa",
-  "private_key_id": "9f051ec1e9a00a488a3ca6a2cdcff7145c616e00",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDzj5lSnd3e8Qi0\nnBh4my7JfhXKmuODBUwqTSKDgRttcorzAnVA0HHy5/BbEeWKdzgGtJjmTMj30DIf\nQh63jQxR6VQsAi57sKbBWFgk2ZQ3a/oDJOiTxf14WaGhtFz0NGf2YG7hYwSbmTGT\nUXSfc7eFrPgqexNAR+CHwk+d8HCcI4zrmk30YFUYZ2qPMTKmhNDVSXGqKUzfm1xE\nQTDYFO3Hnb54e185N7vOK+KldImeZZd3yu36r9+XR+OLBNS6JE4bKm1qu909a9MB\nByijKCNSAJQ96Rp+LKH0h+Gkgn7KUCD79tq1NLqeyu3Q3rrWacQMG3ujW1hfv2c4\ngTI1x5dRAgMBAAECggEADGFqRnF74Q9DhVrB66+HtfpQxUG7pYypYyUUnLaoBuzh\nn0Sqt9FgrsZCHimkugshWps818gOFyVgHDKnjmZUZVLaUnpck9urk6cX+UI4xIXF\nPvpV+tz/lhSIS3NNnk7jp08ePnANaz4NmmgePioK/s0yDYbADcPEPWJlMFQT2qaN\nPtrdqQU+BW7C2iMuCNzDfPYz6E0ksJNKm6ghq0+91xyX/KuV7yal7w9T6ja1tTPs\nI+rDmib1oLExtSKum++o7iYCiUUqHWr9xXXzSYbjlHjB7aedtn6tGnLed7nYBI7i\n5Q9+eDBfPEI3ZKRv6yfqcnkwLMEe537jCbyKV6jfeQKBgQD9/ybtrB3uHoKQJuB6\nRtT6mm0HNvPopnlCQPKK4Q69Fvjwy6NPXkEcQDkzVI/JjSxK7sLW1LE6T5A0BEbd\nyCm050nTUyfh2LgU0TqlQ0kANiQa62/OUzpyj50lBMqMk9owi4aP+zmcmrcIgVr1\n8XcYaDAmeUUHH1q50CiaESnSLwKBgQD1e2A6Of/GAi834sEbc2aMyUFGCZetqI+/\nNd3JnPRgN8HRa5ve35SjURdkwl90M4aN3ecVYywarTGVhurCijdKoSGp4BEifSgZ\nV7qgnb6snCsVFUnAtYvogcMQpdegXcmkHAgf7AUZqgFGRo/4XHtic/Gvy8Y3/6dW\nuoBX4mJOfwKBgGFBP6Cl1NgGaqvTlwR69rX2R2UJz573j1qlD7nJryEMGMnqz19m\nkbvFg6F58YyVN66Bea1Ux3+yU173fEMTj5SrMwNtxcmed+3Qp4n8F4mzMWP1Xlw8\nVhbjkqJIEV5+hn8sDZw377ldLFRfY3rkuFtqGXXB3YJ6qPyZDdLgW4kVAoGAKp5a\n3IEJSOVEMV2qzQtB+JtQO8qajMnA+x9s+/3F55aGjccy7oS+l4QSnampTNFNQQAP\niIUJOTBsdVtREqlQZCKJZ6bBEs3L0mqKuivo2KrcR/LENTLPsXQl25QPVYYy5c0A\nFBqz3/rF8d96S1IzEaqzgSPNrBc0hDgo5BknnB0CgYBJ+aFgR8rg7/fohR/v8AOE\nZIALkH3KBtvP9qS3KEKJWG5AR7M5aXYvfx7a2F//0NjB9GkK6fo4Fkh6TzGETUnW\n0UlGDPCykhQoWXAHvPmjmawOWecZMBWXNAQVo0E5ULRAm/KQQBEgXoXS0n/avMd9\nagFvawXiDDzqe6bz35egyw==\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "ID",
+  "private_key": "PRIVATE KEY",
   "client_email": "firebase-adminsdk-p39nz@ubuntu-kwanzaa.iam.gserviceaccount.com",
   "client_id": "114808970587451966146",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
