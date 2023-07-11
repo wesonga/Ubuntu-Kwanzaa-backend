@@ -1,5 +1,5 @@
 {
-  "host": "34.171.28.62",
+  "host": "localhost",
   "user": "root",
   "password": "Password",
   "database": "ubuntu-kwanzaa"
