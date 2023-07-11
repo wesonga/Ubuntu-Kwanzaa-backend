@@ -1,6 +1,6 @@
 {
-  "host": "localhost",
+  "host": "34.171.28.62",
   "user": "root",
-  "password": "",
-  "database": "gdsc-ys-golden-time"
+  "password": "Password",
+  "database": "ubuntu-kwanzaa"
 }
