@@ -1,106 +1,60 @@
-var express = require("express");
-var router = express.Router();
-var db = require("../database/connection.js");
+const express = require("express");
+const router = express.Router();
+const db = require("../database/connection.js");
 
-router.get("/", async function (req, res) {
-  var sql = "select id, title, subtitle, description, case_ids from disease";
-  if (req.query.ids !== undefined) {
-    sql += " where id in (" + req.query.ids + ")";
-  }
+// Retrieve all diseases
+router.get("/", async (req, res) => {
   try {
-    await db.query(sql, async function (err, results) {
-      if (err) throw err;
-      var promises = [];
-      results.forEach((elem, i) => {
-        if (elem.case_ids === "") {
-          delete results[i].case_ids;
-          promises.push(
-            new Promise((resolve, reject) => {
-              resolve({ ...results[i], cases: [] });
-            })
-          );
-        } else {
-          promises.push(
-            new Promise((resolve, reject) => {
-              var sql2 =
-                "select id, title, subtitle from `case` where id in (" +
-                elem.case_ids +
-                ")";
-              delete results[i].case_ids;
-              db.query(sql2, function (err, result2) {
-                if (err) throw err;
-                resolve({ ...results[i], cases: result2 });
-              });
-            })
-          );
-        }
-      });
+    let sql = "SELECT id, title, subtitle, description, case_ids FROM disease";
+    if (req.query.ids) {
+      const ids = req.query.ids.split(",").map(Number);
+      sql += ` WHERE id IN (${ids.join(",")})`;
+    }
 
-      Promise.all(promises).then((x) => {
-        res.status(200).json({
-          diseases: x,
-        });
-      });
+    const results = await db.query(sql);
+    const promises = results.map(async (disease) => {
+      if (!disease.case_ids) {
+        return { ...disease, cases: [] };
+      } else {
+        const caseIds = disease.case_ids.split(",").map(Number);
+        const sql2 = `SELECT id, title, subtitle FROM \`case\` WHERE id IN (${caseIds.join(",")})`;
+        const cases = await db.query(sql2);
+        return { ...disease, cases };
+      }
     });
+
+    const diseases = await Promise.all(promises);
+    res.status(200).json({ diseases });
   } catch (error) {
     console.error(error);
-    res.status(400).json({
-      message: "error occured",
-    });
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
-router.get("/:disease_id", async function (req, res) {
-  var sql =
-    "select id, title, subtitle, description, case_ids from disease where id =" +
-    req.params.disease_id;
-  await db.query(sql, async function (err, result) {
-    if (err) throw err;
+// Retrieve a specific disease by ID
+router.get("/:disease_id", async (req, res) => {
+  try {
+    const diseaseId = parseInt(req.params.disease_id);
+    const sql = `SELECT id, title, subtitle, description, case_ids FROM disease WHERE id = ?`;
+    const results = await db.query(sql, [diseaseId]);
 
-    function proc() {
-      return new Promise((resolve, reject) => {
-        var sql2 =
-          "select id, title, subtitle from `case` where id in (" +
-          result[0].case_ids +
-          ")";
-        delete result[0].case_ids;
-        db.query(sql2, function (err, result2) {
-          if (err) throw err;
-          resolve({ ...result[0], cases: result2 });
-        });
-      });
+    if (results.length === 0) {
+      return res.status(404).json({ message: "Disease not found" });
     }
 
-    if (result[0].case_ids === "") {
-      delete result[0].case_ids;
-      res.status(200).json({
-        ...result[0],
-        case: [],
-      });
-    } else {
-      proc().then((x) => {
-        res.status(200).json(x);
-      });
+    const disease = results[0];
+    if (!disease.case_ids) {
+      return res.status(200).json({ ...disease, cases: [] });
     }
-  });
+
+    const caseIds = disease.case_ids.split(",").map(Number);
+    const sql2 = `SELECT id, title, subtitle FROM \`case\` WHERE id IN (${caseIds.join(",")})`;
+    const cases = await db.query(sql2);
+    res.status(200).json({ ...disease, cases });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
 });
-
-// DEPRECATED
-// router.get("/:disease_id/manual", function (req, res) {
-//   var sql =
-//     "select content from disease inner join manual on disease.manual_id = manual.id where disease.id = ?";
-//   var datas = [req.params.disease_id];
-//   db.query(sql, datas, function (err, result) {
-//     if (err) {
-//       res.status(400).json({
-//         message: "MySQL error: " + err.message,
-//       });
-//       return;
-//     }
-//     res.status(200).json({
-//       manual: JSON.parse(result[0].content),
-//     });
-//   });
-// });
 
 module.exports = router;
