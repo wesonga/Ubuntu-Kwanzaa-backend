@@ -1,14 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "ubuntu-kwanzaa-8e3f7",
-  "private_key_id": "923d65c0a2d95e1906d2bd42879f5d6153cdd0d5",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7HEKrKJlE0V9+\nzUX5D/BZhSRFoUB7svxKytV9wxWhmXupd5jVqPrrV7If2FRyrWzsPAGNtbCbgn5o\nwQ2JxaYHDeLhCLgPJL+iIHf63yVFOhDpMLge3UzIpiqqBHW0wA98RFrax1orMpGK\nHVGDyd/ezJJ8bTPzSrCf0SS/QkY+vZ88tTnC+68y9RXF0jONe/vkf2jx6ZhFScmh\nYn0i+lkoEgsoCdFB2Ygy9VNrcdqW8kCDjgBrAuBJH6ZwTGFrT5JtAgyHIczETYKF\nFZ3FCAJ/B0+nMyCN941hBgtzZzvLh3D3of3J3Ah+D26TmAZJKm0mWBUcr0A4yOGP\nqZ4xLRB/AgMBAAECggEAHtjjYt1gG1jbQgfsi8mladTJ7JLPkzUoY9o5xTCG3ev0\nV7WIZF0l9OuxyY88KOXPicjAxtCX66NhXLrLFRYZL5uJ9mieE50O3Nc2gI0OU3Hl\nvNQT3r7EPGYsrXfrwd9SDj4krmHkSy/cj6USvcPn3Q7j7ZCBWpBLOyXbRY7TDt+i\n7lzbzzu+6abOlArWm8TarnhxzStjpWbs5xpMHsT8lHwZwIRZVFsG/19xWclcSLys\npv4clVH9LV4xym+TrOQMS8YoYFuNhb3kBUlFHrcQGsZhlsq9TBInoW3SDRYs5GS9\nKabuP9gNt6uDkDB5Bm+8MM6HDy+7o92vTtKlldrICQKBgQDii8bX0WaNdveTab+N\nRCcQ/xBxZjOkZ+UcCAPyX+WQP+qam7kBV9PM0Tbei3frtMgkgCf0OuKtKd3UF3jJ\n1IcFlO2sorPkXhH/8Dv+6alhcEBH1AnxvnG01ZxK5teZg2b+ShnIgvxXhSfkad2Y\nGoe7+A1uTGIKMjfajkjQ/EVXlwKBgQDTb+6gloadp89NATV/5mAUGpx8/JhyQK46\neFjiwmQ72KdtmG7DyjeBG/SITGTuzFfsj/rOulF+qVL45M0MzZsKr6u9MsA/KL/A\nQJaCjhN2+C+MGni1hsKdo8WByUt6pvVM12WYAKZi5VPu9q3VAPKYt0i/V/QmaLjs\ndM2/fObrWQKBgQCgLRX1R/ALe58GklFGT3aTtNPqacl/p5m9HQm1WApW2GpG0G2Z\nPoDZIt95sAClHhgYfqhBLVVR+/UE3WegxGyHDMqTMiKhB8YQQMoarRj+dMBuSMST\nMQTyR8oOx3KO7vJmPvxF4h8KvnH7NMLhpXhs9bCBWO5EqUcGd22SnZtllwKBgQCX\nqJHhXhbwvo1TDqrxMq13vh7BB+3RBdPy3J/lBsoeoyh01AGfLkzhrsuXeDRtlOT8\nKcocvkf2Mj3xiSwLIu8ymw70hpKeuvvPSoSq4H3Vt+9i7xnmGuM9b1sb3Obm8xrA\nI0Ab51txVEz/+rB1OFjKca0cklntsu/xq1ZpI43/AQKBgEItNc4nSDABovtHYd5v\nUhwvNyT7DDrpS5x2mNvPhlGzW0Ra/ilIRT1ekzl9Ry/XxfKu0JUjTs3tA+bvMng0\nJaA1AbQuQu4OXAIv659011Ig6n0MVA+gdondTY7WKZ2Cz6110V65jrDcDJ3/bJ7x\nkYE8yF3Qc3xrym06OwQm9Hg6\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-78ctm@ubuntu-kwanzaa-8e3f7.iam.gserviceaccount.com",
-  "client_id": "115088230914306278602",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-78ctm%40ubuntu-kwanzaa-8e3f7.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-
+generate this file from firebase
