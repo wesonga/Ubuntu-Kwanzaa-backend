@@ -1,6 +1,6 @@
 {
-  "host": "localhost",
-  "user": "root",
-  "password": "Password",
-  "database": "ubuntu-kwanzaa"
+  "host": "your hose",
+  "user": "username",
+  "password": "user password",
+  "database": "database name of your database"
 }
